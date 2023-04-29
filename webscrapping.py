@@ -16,9 +16,9 @@ while True:
         smt = smtplib.SMTP('smtp.gmail.com', 587)
         smt.ehlo()
         smt.starttls()
-        smt.login('jethalalgada9325@gmail.com', 'dyzbigvfuufdtzvf')
-        smt.sendmail('jethalalgada9325@gmail.com','omdagade9325@gmail.com',
-                     f"Subject: Price has dropped!!!!\n\nPrice of the product you were looking to buy has been dropped to {price}. Go fast and buy the product using the link- {url} \n\nRegards Om Dagade\nomdagade9325@gmail.com")
+        smt.login('senderemail@gmail.com', 'password')
+        smt.sendmail('senderemail@gmail.com','receiveremail@gmail.com',
+                     f"Subject: Price has dropped!!!!\n\nPrice of the product you were looking to buy has been dropped to {price}. Go fast and buy the product using the link- {url} \n\nRegards Om Dagade\nsenderemail@gmail.com")
         smt.quit()
     time.sleep(24*60*60)
 
